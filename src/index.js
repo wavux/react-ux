@@ -1,1 +1,2 @@
-export Container from './component/Container';
+export Container from './Component/Container';
+export FlexBox from './Component/FlexBox';
