@@ -1,0 +1,25 @@
+{
+  "name": "react-ux",
+  "version": "1.0.0",
+  "description": "React-ux is a library of components",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wavux/react-ux.git"
+  },
+  "keywords": [
+    "react",
+    "react-ux",
+    "ux",
+    "components"
+  ],
+  "author": "Olivier Colonna <olivier.colonna@drivetribe.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wavux/react-ux/issues"
+  },
+  "homepage": "https://github.com/wavux/react-ux#readme"
+}
