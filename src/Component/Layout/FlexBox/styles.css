@@ -1,0 +1,98 @@
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.rowReverse {
+  flex-direction: row-reverse;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.columnReverse {
+  flex-direction: column-reverse;
+}
+
+.justifyStart {
+  justify-content: flex-start;
+}
+
+.justifyEnd {
+  justify-content: flex-end;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.justifyBetween {
+  justify-content: space-between;
+}
+
+.justifyAround {
+  justify-content: space-around;
+}
+
+.alignStart {
+  align-content: flex-start;
+}
+
+.alignEnd {
+  align-content: flex-end;
+}
+
+.alignCenter {
+  align-content: center;
+}
+
+.alignStretch {
+  align-content: stretch;
+}
+
+.alignBetween {
+  align-content: space-between;
+}
+
+.alignAround {
+  align-content: space-around;
+}
+
+.alignItemsStart {
+  align-items: flex-start;
+}
+
+.alignItemsEnd {
+  align-items: flex-end;
+}
+
+.alignItemsCenter {
+  align-items: center;
+}
+
+.alignItemsStretch {
+  align-items: stretch;
+}
+
+.alignItemsBaseline {
+  align-items: baseline;
+}
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .navigation {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .navigation {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
