@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Container from 'Component/Container';
+import Container from '../../../Component/Container';
 import classnames from 'classnames';
 import styles from './styles.css';
 
@@ -46,6 +46,7 @@ FlexBox.defaultProps = {
 };
 
 FlexBox.propTypes = {
+  children: PropTypes.node.isRequired,
   direction: PropTypes.oneOf([
     'row',
     'rowReverse',

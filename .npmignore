@@ -1,3 +1,5 @@
 # folder to not push to npmjs
 src/
 node_modules/
+stories/
+.storybook/

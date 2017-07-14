@@ -18,14 +18,14 @@ class Container extends Component {
 
   render = () => {
     const { children, vertical, horizontal, className, ...restProps } = this.props;
-    const containerClass = classnames(styles.container, {
+    const containerCls = classnames(styles.container, {
       [styles.containerScrollY]: vertical,
       [styles.containerScrollX]: horizontal,
       [className]: className,
     });
 
     return (
-      <div className={containerClass} {...restProps}>
+      <div className={containerCls} {...restProps}>
         { children }
       </div>
     );
