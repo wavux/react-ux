@@ -1,0 +1,14 @@
+export const ROW_REVERSE = 'rowReverse';
+export const COLUMN = 'column';
+export const COLUMN_REVERSE = 'columnReverse';
+export const START = 'start';
+export const CENTER = 'center';
+export const BETWEEN = 'between';
+export const END = 'end';
+export const AROUND = 'around';
+export const STRETCH = 'stretch';
+export const BASELINE = 'baseline';
+export const ROW = 'row';
+export const WRAP = 'wrap';
+export const NO_WRAP = 'nowrap';
+export const WRAP_REVERSE = 'wrap-reverse';

@@ -9,6 +9,18 @@
   flex-direction: row-reverse;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
+.noWrap {
+  flex-wrap: nowrap;
+}
+
+.wrapReverse {
+  flex-wrap: wrap-reverse;
+}
+
 .column {
   flex-direction: column;
 }
