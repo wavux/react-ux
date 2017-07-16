@@ -3,12 +3,16 @@
   padding-left: 40px;
 }
 
-.quote {
+.quoteCls {
   display: block;
   margin-top: 1em;
   margin-left: 0;
   margin-bottom: 1em;
   margin-right: 40px;
   border-left: 2px solid black;
+  padding-left: 10px;
+}
+
+.quoteeCls {
   padding-left: 10px;
 }

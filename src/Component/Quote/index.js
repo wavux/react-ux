@@ -16,7 +16,7 @@ class Quote extends Component {
 
   render() {
     const { children, cite, className, quotee, ...restProps } = this.props;
-    const quoteCls = classnames(styles.quote, {
+    const quoteCls = classnames(styles.quoteCls, {
       [className]: className
     });
 
@@ -25,9 +25,12 @@ class Quote extends Component {
         <blockquote className={quoteCls} cite={cite} {...restProps}>
           { children }
         </blockquote>
-        <span>
-          { quotee }
-        </span>
+        {
+          quotee &&
+          <span className={styles.quoteeCls}>
+            { quotee }
+          </span>
+        }
       </div>
     );
   }
