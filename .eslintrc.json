@@ -1,5 +1,11 @@
 {
+  "parser": "babel-eslint",
   "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
   "ecmaFeatures": {
     "forOf": true,
     "jsx": true,
@@ -7,6 +13,11 @@
     "spread": true,
     "experimentalObjectRestSpread": true,
     "modules": true
+  },
+  "globals": {
+    "d3": true,
+    "jwplayer": true,
+    "ga": true
   },
   "rules": {
     "comma-dangle": 0,
