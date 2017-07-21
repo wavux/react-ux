@@ -1,0 +1,19 @@
+{
+  "extends": "airbnb",
+  "ecmaFeatures": {
+    "forOf": true,
+    "jsx": true,
+    "es6": true,
+    "spread": true,
+    "experimentalObjectRestSpread": true,
+    "modules": true
+  },
+  "rules": {
+    "comma-dangle": 0,
+    "max-len": [1, {
+      "code": 120
+    }],
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "react/prop-types": 0
+  }
+}
