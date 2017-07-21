@@ -56,7 +56,7 @@ FlexBox.propTypes = {
     FLEXBOX.ROW,
     FLEXBOX.ROW_REVERSE,
     FLEXBOX.COLUMN,
-    FLEXBOX.ROW_REVERSE
+    FLEXBOX.COLUMN_REVERSE
   ]),
   flexWrap: PropTypes.oneOf([
     FLEXBOX.WRAP,

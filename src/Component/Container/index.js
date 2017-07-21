@@ -16,7 +16,7 @@ class Container extends Component {
     className: PropTypes.string,
   }
 
-  render = () => {
+  render() {
     const { children, vertical, horizontal, className, ...restProps } = this.props;
     const containerCls = classnames(styles.container, {
       [styles.containerScrollY]: vertical,

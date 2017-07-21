@@ -8,14 +8,20 @@ import styles from './styles.css';
  * Paragraph - component to render the paragraph
  */
 class Paragraph extends PureComponent {
+  static defaultProps = {
+    align: 'start'
+  }
+
   static propTypes = {
     children: PropTypes.node,
-    className: PropTypes.string
+    className: PropTypes.string,
+    align: PropTypes.oneOf(['start', 'center', 'end'])
   }
 
   render() {
-    const { children, className, ...restProps } = this.props;
+    const { children, className, align, ...restProps } = this.props;
     const paragraphCls = classnames(styles.paragraphCls, {
+      [styles[`paragraphAlign-${align}Cls`]]: align,
       [className]: className
     });
 

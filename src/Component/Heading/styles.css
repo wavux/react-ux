@@ -1,0 +1,25 @@
+.headingCls {
+  font-weight: 300;
+  max-width: 100%;
+  margin-bottom: 12px;
+}
+
+.headingAlign-centerCls {
+  text-align: center;
+}
+
+.headingAlign-startCls {
+  text-align: start;
+}
+
+.headingAlign-endCls {
+  text-align: end;
+}
+
+.boldCls {
+  font-weight: 900;
+}
+
+.uppercaseCls {
+  text-transform: uppercase;
+}
