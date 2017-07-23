@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Container from '../../../Component/Container';
 import classnames from 'classnames';
+import Container from '../../../Component/Container';
 import * as FLEXBOX from '../../../Constants/FlexBox';
 import styles from './styles.css';
 
@@ -47,7 +47,10 @@ const FlexBox = ({ direction, flexWrap, justify, alignContent, alignItems, child
 FlexBox.defaultProps = {
   direction: FLEXBOX.ROW,
   justify: FLEXBOX.START,
-  alignContent: FLEXBOX.STRETCH
+  alignContent: FLEXBOX.STRETCH,
+  flexWrap: FLEXBOX.NO_WRAP,
+  alignItems: FLEXBOX.STRETCH,
+  className: null
 };
 
 FlexBox.propTypes = {

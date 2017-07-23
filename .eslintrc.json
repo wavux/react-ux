@@ -20,6 +20,7 @@
     "ga": true
   },
   "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "comma-dangle": 0,
     "max-len": [1, {
       "code": 120

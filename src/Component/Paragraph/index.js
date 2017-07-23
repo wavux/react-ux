@@ -9,11 +9,12 @@ import styles from './styles.css';
  */
 class Paragraph extends PureComponent {
   static defaultProps = {
-    align: 'start'
+    align: 'start',
+    className: null
   }
 
   static propTypes = {
-    children: PropTypes.node,
+    children: PropTypes.node.isRequired,
     className: PropTypes.string,
     align: PropTypes.oneOf(['start', 'center', 'end'])
   }

@@ -8,6 +8,11 @@ import styles from './styles.css';
  * @author oliviercolonna@gmail.com
  */
 class Container extends Component {
+  static defaultProps = {
+    vertical: false,
+    horizontal: false,
+    className: null
+  }
 
   static propTypes = {
     children: PropTypes.node.isRequired,

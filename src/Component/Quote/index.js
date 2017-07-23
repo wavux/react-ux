@@ -7,6 +7,12 @@ import styles from './styles.css';
  * Quote
  */
 class Quote extends Component {
+  static defaultProps = {
+    className: null,
+    cite: null,
+    quotee: null
+  }
+
   static propTypes = {
     children: PropTypes.element.isRequired,
     className: PropTypes.string,

@@ -11,7 +11,8 @@ class Heading extends Component {
     tag: 'h1',
     align: 'start',
     bold: false,
-    uppercase: false
+    uppercase: false,
+    className: null
   }
 
   static propTypes = {
@@ -20,7 +21,7 @@ class Heading extends Component {
     uppercase: PropTypes.bool,
     tag: PropTypes.string,
     className: PropTypes.string,
-    children: PropTypes.node
+    children: PropTypes.node.isRequired,
   }
 
   render() {
