@@ -1,0 +1,103 @@
+.button {
+  display: inline-block;
+  zoom: 1;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0,0,0, 0.0);
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.button:active {
+  opacity: 0.7;
+}
+
+.disabled:not(.noBackground),
+.disabled:hover:not(.noBackground),
+.disabled:focus:not(.noBackground),
+.disabled:active:not(.noBackground) {
+  background-color: lightgrey;
+  cursor: not-allowed;
+}
+
+.default {
+  background-color: white;
+  border: 0.2rem solid black;
+  color: black;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.black:hover {
+  background-color: red;
+}
+
+.black.active {
+  background-color: red;
+  cursor: default;
+}
+
+.primary {
+  background-color: red;
+  color: white;
+}
+
+.danger {
+  color: grey;
+  background-color: white;
+  transition: border-color 0.5s ease-in-out, color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.danger:hover {
+  color: red;
+}
+
+.whiteBackground {
+  color: grey;
+  background-color: white;
+}
+
+.noBackground {
+  background-color: transparent;
+}
+
+.noBackground.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.inline {
+  color: inherit;
+  background-color: inherit;
+  font-size: inherit;
+  border: none;
+}
+
+.underlined {
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 3.8rem;
+    right: 3.8rem;
+    content: '';
+    height: 0.4rem;
+    background: $black;
+  }
+}
