@@ -13,6 +13,7 @@ const Button = (props) => {
     active,
     inline,
     disabled,
+    radius,
     underlined,
     className,
     ...restProps
@@ -29,6 +30,7 @@ const Button = (props) => {
     [styles.inline]: inline,
     [styles.underlined]: underlined,
     [styles.disabled]: disabled,
+    [styles.radius]: radius,
     [className]: className
   });
 
@@ -49,7 +51,8 @@ Button.defaultProps = {
   noBackground: false,
   whiteBackground: false,
   inline: false,
-  className: null
+  className: null,
+  radius: false
 };
 
 Button.propTypes = {
@@ -61,6 +64,7 @@ Button.propTypes = {
   noBackground: PropTypes.bool,
   whiteBackground: PropTypes.bool,
   inline: PropTypes.bool,
+  radius: PropTypes.bool,
   className: PropTypes.string
 };
 

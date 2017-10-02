@@ -15,7 +15,7 @@ import styles from './styles.css';
 class Resizable extends Component {
   static defaultProps = {
     opened: true,
-    showButton: true,
+    showButton: false,
     className: null,
     children: null
   }

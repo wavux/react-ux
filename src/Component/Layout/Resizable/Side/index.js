@@ -15,7 +15,7 @@ const Side = ({ opened, className, children, rightSide, ratio, fixed, ...restPro
     [className]: className,
     [styles.opened]: opened
   });
-  const ratioStyle = ratio && { width: `calc(100% * ${ratio})` };
+  const ratioStyle = ratio && { flex: `0 ${ratio} auto` };
   const fixedStyle = fixed && { width: `calc(100% + ${fixed}px)` };
   const style = ratioStyle || fixedStyle;
 
@@ -27,7 +27,8 @@ const Side = ({ opened, className, children, rightSide, ratio, fixed, ...restPro
 };
 
 Side.defaultProps = {
-  ratio: '',
+  ratio: 1,
+  fixed: null,
   opened: true,
   className: null,
   children: null
@@ -35,6 +36,10 @@ Side.defaultProps = {
 
 Side.propTypes = {
   ratio: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number
+  ]),
+  fixed: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number
   ]),

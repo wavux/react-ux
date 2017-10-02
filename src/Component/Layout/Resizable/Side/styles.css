@@ -5,9 +5,9 @@
 }
 
 .rightSide {
-  width: 0%;
+  flex: 0 1 auto;
 }
 
 .opened {
-  width: 50%;
+  flex: 0 1 auto;
 }

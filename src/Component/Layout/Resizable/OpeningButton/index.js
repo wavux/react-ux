@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
-import Button from '../../../../Component/Button';
 // import Icon from '../../../../Component/Icon';
 import styles from './styles.css';
 
@@ -12,26 +10,9 @@ import styles from './styles.css';
  * @param  {string} className
  * @param {boolean} rotate
  */
-const OpeningButton = ({ onClick, className, rotate }) => {
-  const previewButtonClass = classnames({
-    [styles.previewButton]: !rotate,
-    [styles.rotatedPreviewButton]: rotate,
-    [className]: className
-  });
-  const previewTextClass = classnames({
-    [styles.rotatedPreviewText]: rotate,
-    [styles.previewText]: !rotate
-  });
-
+const OpeningButton = () => {
   return (
-    <div className={styles.previewButtonContainer}>
-      <Button className={previewButtonClass} onClick={onClick}>
-        { /* <Icon name="leftChevron" className={styles.leftChevron} /> */ }
-        <span className={previewTextClass}>
-          PREVIEW
-        </span>
-      </Button>
-    </div>
+    <div className={styles.previewButtonContainer} />
   );
 };
 
