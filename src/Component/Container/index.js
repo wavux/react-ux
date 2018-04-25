@@ -12,26 +12,26 @@ class Container extends Component {
     vertical: false,
     horizontal: false,
     className: null
-  }
+  };
 
   static propTypes = {
     children: PropTypes.node.isRequired,
     vertical: PropTypes.bool,
     horizontal: PropTypes.bool,
-    className: PropTypes.string,
-  }
+    className: PropTypes.string
+  };
 
   render() {
     const { children, vertical, horizontal, className, ...restProps } = this.props;
     const containerCls = classnames(styles.container, {
       [styles.containerScrollY]: vertical,
       [styles.containerScrollX]: horizontal,
-      [className]: className,
+      [className]: className
     });
 
     return (
       <div className={containerCls} {...restProps}>
-        { children }
+        {children}
       </div>
     );
   }

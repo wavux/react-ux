@@ -11,14 +11,14 @@ class Quote extends Component {
     className: null,
     cite: null,
     quotee: null
-  }
+  };
 
   static propTypes = {
     children: PropTypes.element.isRequired,
     className: PropTypes.string,
     cite: PropTypes.string,
     quotee: PropTypes.string
-  }
+  };
 
   render() {
     const { children, cite, className, quotee, ...restProps } = this.props;
@@ -29,14 +29,9 @@ class Quote extends Component {
     return (
       <div className={styles.blockQuoteCls}>
         <blockquote className={quoteCls} cite={cite} {...restProps}>
-          { children }
+          {children}
         </blockquote>
-        {
-          quotee &&
-          <span className={styles.quoteeCls}>
-            { quotee }
-          </span>
-        }
+        {quotee && <span className={styles.quoteeCls}>{quotee}</span>}
       </div>
     );
   }

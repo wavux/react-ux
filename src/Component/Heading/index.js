@@ -13,7 +13,7 @@ class Heading extends Component {
     bold: false,
     uppercase: false,
     className: null
-  }
+  };
 
   static propTypes = {
     align: PropTypes.oneOf(['start', 'center', 'end']),
@@ -21,11 +21,19 @@ class Heading extends Component {
     uppercase: PropTypes.bool,
     tag: PropTypes.string,
     className: PropTypes.string,
-    children: PropTypes.node.isRequired,
-  }
+    children: PropTypes.node.isRequired
+  };
 
   render() {
-    const { align, bold, uppercase, tag: Tag, className, children, ...restProps } = this.props;
+    const {
+      align,
+      bold,
+      uppercase,
+      tag: Tag,
+      className,
+      children,
+      ...restProps
+    } = this.props;
     const headingCls = classnames(styles.headingCls, {
       [styles[`headingAlign-${align}Cls`]]: align,
       [styles.boldCls]: bold,
@@ -35,7 +43,7 @@ class Heading extends Component {
 
     return (
       <Tag className={headingCls} {...restProps}>
-        { children }
+        {children}
       </Tag>
     );
   }

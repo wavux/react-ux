@@ -11,13 +11,13 @@ class Paragraph extends PureComponent {
   static defaultProps = {
     align: 'start',
     className: null
-  }
+  };
 
   static propTypes = {
     children: PropTypes.node.isRequired,
     className: PropTypes.string,
     align: PropTypes.oneOf(['start', 'center', 'end'])
-  }
+  };
 
   render() {
     const { children, className, align, ...restProps } = this.props;
@@ -28,7 +28,7 @@ class Paragraph extends PureComponent {
 
     return (
       <p className={paragraphCls} {...restProps}>
-        { children }
+        {children}
       </p>
     );
   }

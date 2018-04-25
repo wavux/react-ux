@@ -15,7 +15,7 @@ const App = ({ children, noBounce, fullScreen, center, ...restProps }) => {
 
   return (
     <div className={appCls} {...restProps}>
-      { React.cloneElement(children, { ...restProps }) }
+      {React.cloneElement(children, { ...restProps })}
     </div>
   );
 };

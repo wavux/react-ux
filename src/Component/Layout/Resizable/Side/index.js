@@ -21,7 +21,7 @@ const Side = ({ opened, className, children, rightSide, ratio, fixed, ...restPro
 
   return (
     <Container className={sideClass} style={style} {...restProps}>
-      { children }
+      {children}
     </Container>
   );
 };
@@ -35,21 +35,11 @@ Side.defaultProps = {
 };
 
 Side.propTypes = {
-  ratio: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number
-  ]),
-  fixed: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number
-  ]),
+  ratio: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  fixed: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   opened: PropTypes.bool,
   className: PropTypes.string,
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.func,
-    PropTypes.node
-  ])
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.func, PropTypes.node])
 };
 
 export default Side;

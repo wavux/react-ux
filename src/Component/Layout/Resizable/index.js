@@ -18,7 +18,7 @@ class Resizable extends Component {
     showButton: false,
     className: null,
     children: null
-  }
+  };
 
   static propTypes = {
     opened: PropTypes.bool,
@@ -29,16 +29,18 @@ class Resizable extends Component {
       let error = null;
 
       if (len > 2) {
-        error = new Error(`Invalid prop ${propName} supplied to resizable, the maximum number of children is 2.`);
+        error = new Error(
+          `Invalid prop ${propName} supplied to resizable, the maximum number of children is 2.`
+        );
       }
 
       return error;
     }
-  }
+  };
 
   state = {
     opened: this.props.opened
-  }
+  };
 
   componentWillReceiveProps(nextProps) {
     const { opened } = nextProps;
@@ -54,7 +56,7 @@ class Resizable extends Component {
     }
 
     this.setState({ opened: !this.state.opened });
-  }
+  };
 
   render() {
     const { showButton, className, children } = this.props;
@@ -62,21 +64,23 @@ class Resizable extends Component {
       [className]: className
     });
 
-    const previewButton = <OpeningButton rotate={this.state.opened} onClick={this.onClickPreviewButton} />;
+    const previewButton = (
+      <OpeningButton rotate={this.state.opened} onClick={this.onClickPreviewButton} />
+    );
 
-    const childrenWithProps = React.Children.map(children, (child, index) => (
+    const childrenWithProps = React.Children.map(children, (child, index) =>
       React.cloneElement(child, {
         ratio: child.props.ratio,
         opened: this.state.opened,
         rightSide: index === 1
       })
-    ));
+    );
 
     return (
       <Container className={resizableContainerClass}>
-        { childrenWithProps[0] || null }
-        { showButton && previewButton }
-        { childrenWithProps[1] || null }
+        {childrenWithProps[0] || null}
+        {showButton && previewButton}
+        {childrenWithProps[1] || null}
       </Container>
     );
   }

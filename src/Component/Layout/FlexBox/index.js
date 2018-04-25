@@ -9,7 +9,16 @@ import styles from './styles.css';
  * @author Olivier Colonna, oliviercolonna@gmail.com
  * FlexBox
  */
-const FlexBox = ({ direction, flexWrap, justify, alignContent, alignItems, children, className, ...restProps }) => {
+const FlexBox = ({
+  direction,
+  flexWrap,
+  justify,
+  alignContent,
+  alignItems,
+  children,
+  className,
+  ...restProps
+}) => {
   const horizontalClass = classnames({
     [styles.horizontal]: true,
     [styles.rowReverse]: direction === FLEXBOX.ROW_REVERSE,
@@ -39,7 +48,7 @@ const FlexBox = ({ direction, flexWrap, justify, alignContent, alignItems, child
 
   return (
     <Container className={horizontalClass} {...restProps}>
-      { children }
+      {children}
     </Container>
   );
 };
@@ -61,11 +70,7 @@ FlexBox.propTypes = {
     FLEXBOX.COLUMN,
     FLEXBOX.COLUMN_REVERSE
   ]),
-  flexWrap: PropTypes.oneOf([
-    FLEXBOX.WRAP,
-    FLEXBOX.NO_WRAP,
-    FLEXBOX.WRAP_REVERSE
-  ]),
+  flexWrap: PropTypes.oneOf([FLEXBOX.WRAP, FLEXBOX.NO_WRAP, FLEXBOX.WRAP_REVERSE]),
   justify: PropTypes.oneOf([
     FLEXBOX.START,
     FLEXBOX.END,

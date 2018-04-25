@@ -11,9 +11,7 @@ import styles from './styles.css';
  * @param {boolean} rotate
  */
 const OpeningButton = () => {
-  return (
-    <div className={styles.previewButtonContainer} />
-  );
+  return <div className={styles.previewButtonContainer} />;
 };
 
 OpeningButton.defaultProps = {

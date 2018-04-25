@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import styles from './styles.css';
 
-const Button = (props) => {
+const Button = props => {
   const {
     primary,
     black,
@@ -36,7 +36,7 @@ const Button = (props) => {
 
   return (
     <button className={buttonClassName} disabled={disabled} tabIndex="-1" {...restProps}>
-      { props.children }
+      {props.children}
     </button>
   );
 };
