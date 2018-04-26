@@ -1,15 +1,15 @@
 /**
  * Componentss
  */
-export Container from './Componentss/Container';
-export FlexBox from './Componentss/Layout/FlexBox';
-export Quote from './Componentss/Quote';
-export Paragraph from './Componentss/Paragraph';
-export Heading from './Componentss/Heading';
-export App from './Componentss/App';
-export Button from './Componentss/Button';
+export Container from './componentss/Container';
+export FlexBox from './componentss/Layout/FlexBox';
+export Quote from './componentss/Quote';
+export Paragraph from './componentss/Paragraph';
+export Heading from './componentss/Heading';
+export App from './componentss/App';
+export Button from './componentss/Button';
 
 /**
  * Constants
  */
-export * as FLEXBOX from './Constants/FlexBox';
+export * as FLEXBOX from './constants/FlexBox';

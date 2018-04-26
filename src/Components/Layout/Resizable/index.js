@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import Container from '../../../Components/Container';
+import Container from '../../../components/Container';
 import OpeningButton from './OpeningButton';
 import styles from './styles.css';
 

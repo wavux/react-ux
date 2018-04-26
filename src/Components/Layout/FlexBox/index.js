@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import Container from '../../../Components/Container';
-import * as FLEXBOX from '../../../Constants/FlexBox';
+import Container from '../../../components/Container';
+import * as FLEXBOX from '../../../constants/FlexBox';
 import styles from './styles.css';
 
 /**
